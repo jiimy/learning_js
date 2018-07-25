@@ -1,4 +1,10 @@
-function TT() {
-  console.log("aa");
+function a(){
+  global.luckyuNumber = 23
 }
-TT();
+
+function b(){
+  global.luckyuNumber = 42
+}
+
+a();
+b();
