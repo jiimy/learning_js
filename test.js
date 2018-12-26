@@ -45,7 +45,7 @@ func();
 // console.log(newArr)// 여러분들이 실행해보세요
 
 function printmap(index, value) {
-  return index + "번째 과일은 " + value + "입니다";
+  return 'printmap 함수 테스트 '+index + "번째 과일은 " + value + "입니다";
 };
 var map = ["apple", "tomato"].map(printmap);
 console.log(map);
@@ -89,7 +89,6 @@ for (var i = 0; i < widget.length; i++) {
 }
 
 
-/////////////////////
 let number = [];
 const keys = Object.keys(widget);
 
