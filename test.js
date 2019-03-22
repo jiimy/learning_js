@@ -2,13 +2,15 @@
 // dom 선택
 function $(...dom) {
   // 여러개의 dom 받을 경우
-  var split = dom[0].split(',');
+  var split = dom[0].split(', ');
   console.log('분할'+split[0], split[1]);
   // console.log(split.length);
   if(split.length > 1){
     for ( i in split){
       console.log(split[i]);
       var domSelect = document.querySelector(split[i]);
+      // return domSelect;
+      // 여기서 객체로 동적 생성? return domSelect 하게되면 한개만 첫번째 한개만 반환되는듯..
     }
   }
   var domSelect = document.querySelector(dom);
